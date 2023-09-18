@@ -1,0 +1,73 @@
+body{
+    margin: 0px;
+    padding: 0px;
+}
+
+.chatroom-container{
+    display: block;
+}
+.form-username{
+    display: none;
+}
+/* //just for dev purpose actually chatroom-container is display none */
+
+
+/* align items targets all the elements present in flex conatianer wherease align self targets nlt the required elements */
+.messages{
+    display: flex;
+    flex-direction: column;
+    height: 85vh;
+    background-color: #e1e1e1;
+}
+.sent{
+    align-self: flex-end;
+}
+.chatroom-header{
+    background-color: black;
+    color: white;
+    font-size: 2rem;
+    padding: 0.5rem;
+    text-align: center;
+}
+.message{
+    background-color: #DCF8C6;
+    width:fit-content;
+    padding: 0.5rem;
+    margin:0.5rem;
+    font-size:1rem;
+}
+#message-input{
+    width:1050px;
+    margin-top:5px;
+    margin-bottom:10px;
+    margin-left:20px;
+    border-color: blue;
+    height: 26px;
+    border-radius: 6px;
+}
+::placeholder{
+    color:black;
+    padding: 2px;
+    text-align: center;
+    font-weight: 500;
+    font-size: 14px;
+}
+#send-button{
+    height: 32px;
+    width:160px;
+    background-color: #25D366;
+    border: none;
+    color: white;
+    font-size: 14px;
+    font-weight: 600;
+    cursor: pointer;
+    border-radius: 5px;
+    transition-delay:5sec ;
+}
+#send-button:hover{
+    border:2px dotted blue;
+    color: blue;
+    transition-delay:5sec ;
+    transition: color 0.5s;
+  
+}
